@@ -10,14 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_08_14_075508) do
+ActiveRecord::Schema.define(version: 2018_08_14_094523) do
 
-  create_table "messages", force: :cascade do |t|
-    t.string "title"
-    t.string "message"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.string "name"
-  end
+# Could not dump table "messages" because of following StandardError
+#   Unknown type 'stirng' for column 'calorie'
 
 end

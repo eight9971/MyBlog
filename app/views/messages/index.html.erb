@@ -8,6 +8,7 @@
       <th>Title</th>
       <th>Message</th>
       <th>Name</th>
+      <th>Calorie</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -17,7 +18,8 @@
       <tr>
         <td><%= message.title %></td>
         <td><%= message.message %></td>
-        <th><%= message.name %></th>
+        <td><%= message.name %></td>
+        <td><%= message.calorie %></td>
         <td><%= link_to 'Show', message %></td>
         <td><%= link_to 'Edit', edit_message_path(message) %></td>
         <td><%= link_to 'Destroy', message, method: :delete, data: { confirm: 'Are you sure?' } %></td>
